@@ -3,14 +3,6 @@
 **Habit Hero** ist eine App, die Nutzern hilft, ihren persönlichen Fortschritt in verschiedenen Fähigkeiten (Skills) zu verfolgen und zu managen.
 
 ## Grundidee
-
-- neue **Skills** können hinzufügt werden
-- Skills haben einen **Namen** und eine **Regelmäßigkeit**
-- Es gibt einen **Startwert (Elo)**
-- am Skill wird das **+/- Gain** angezeigt
-- User kann einstellen, an welchem Zeitpunkt des Tages ein **Gesamtbericht** angezeigt wird
-- jeder Skill hat einen Button, an dem man abgeschlossene **Sessions** eintragen kann
-
 - **Skill-Management**: Füge neue Skills mit individuellen Namen und festgelegten Regelmäßigkeiten hinzu.
 - **Session-Tracking**: Für jeden Skill gibt es eine Option, um abgeschlossene Sessions zu dokumentieren. Regelmäßige Sessions führen zu einer Steigerung der Elo-Wertung.
 - **Fortschrittsverfolgung**: Jeder Skill beginnt mit einem Startwert (Elo). Die Elo-Wertung steigt, wenn du deine Ziele erreichst und sinkt, wenn du Sessions auslässt.
