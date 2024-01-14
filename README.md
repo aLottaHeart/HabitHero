@@ -11,7 +11,7 @@ App, mit der man den persönlichen Fortschritt in bestimmten "Skills" tracken ka
 - User kann einstellen, an welchem Zeitpunkt des Tages ein **Gesamtbericht** angezeigt wird
 - jeder Skill hat einen Button, an dem man abgeschlossene **Sessions** eintragen kann
 
-![elo function](assets\elo_function.png)
+![elo function](assets/elo_function.png)
 
 ## Details
 
