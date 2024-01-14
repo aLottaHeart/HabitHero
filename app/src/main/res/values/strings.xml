@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HabitHero</string>
+    <string name="action_add">Add</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_achievements">Achievements</string>
+</resources>
