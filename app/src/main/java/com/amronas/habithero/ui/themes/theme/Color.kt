@@ -1,4 +1,4 @@
-package com.amronas.habithero.ui.theme
+package com.amronas.habithero.ui.themes.theme
 
 import androidx.compose.ui.graphics.Color
 
