@@ -54,7 +54,7 @@ fun AddSkillDialog(
                     Box {
                         TextField(
                             value = frequencyUnit.name,
-                            onValueChange = { /* No need to change */ },
+                            onValueChange = { },
                             label = { Text("Frequency Unit") },
                             readOnly = true,
                             trailingIcon = { Icon(Icons.Filled.ArrowDropDown, "dropdown") },
@@ -64,7 +64,7 @@ fun AddSkillDialog(
                             expanded = showDropdownMenu,
                             onDismissRequest = { showDropdownMenu = false }
                         ) {
-                            FrequencyUnit.values().forEach { unit ->
+                            FrequencyUnit.entries.forEach { unit ->
                                 DropdownMenuItem(
                                     onClick = { showDropdownMenu = false },
                                     text = { Text(text = unit.name) }

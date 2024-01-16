@@ -5,6 +5,16 @@ object TestDataProvider {
         return listOf(
             Skill(name = "Reading", frequencyValue = 1, frequencyUnit = FrequencyUnit.DAY),
             Skill(id = 2, name = "Exercise", frequencyValue = 3, frequencyUnit = FrequencyUnit.WEEK),
+            Skill(id = 2, name = "Exercise", frequencyValue = 3, frequencyUnit = FrequencyUnit.WEEK),
+            Skill(id = 2, name = "Exercise", frequencyValue = 3, frequencyUnit = FrequencyUnit.WEEK),
+            Skill(id = 2, name = "Exercise", frequencyValue = 3, frequencyUnit = FrequencyUnit.WEEK),
+            Skill(id = 2, name = "Exercise", frequencyValue = 3, frequencyUnit = FrequencyUnit.WEEK),
+            Skill(id = 2, name = "Exercise", frequencyValue = 3, frequencyUnit = FrequencyUnit.WEEK),
+            Skill(id = 2, name = "Exercise", frequencyValue = 3, frequencyUnit = FrequencyUnit.WEEK),
+            Skill(id = 2, name = "Exercise", frequencyValue = 3, frequencyUnit = FrequencyUnit.WEEK),
+            Skill(id = 2, name = "Exercise", frequencyValue = 3, frequencyUnit = FrequencyUnit.WEEK),
+            Skill(id = 2, name = "Exercise", frequencyValue = 3, frequencyUnit = FrequencyUnit.WEEK),
+            Skill(id = 2, name = "Exercise", frequencyValue = 3, frequencyUnit = FrequencyUnit.WEEK),
         )
     }
 }

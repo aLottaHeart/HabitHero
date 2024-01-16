@@ -16,6 +16,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.tooling.preview.Preview
+import com.amronas.habithero.data.TestDataProvider
+import com.amronas.habithero.ui.screens.HomeScreen
+import com.amronas.habithero.ui.themes.heroTheme.HabitHeroTheme
 
 enum class Destinations(val route: String, val icon: ImageVector, val title: String) {
     Home("home", Icons.Default.Home, "Home"),
@@ -24,10 +28,12 @@ enum class Destinations(val route: String, val icon: ImageVector, val title: Str
 }
 
 @Composable
-fun NavBar() {
+fun NavBar(
+    modifier: Modifier = Modifier
+) {
     var selectedDestination by remember { mutableStateOf(Destinations.Home) }
 
-    NavigationBar(modifier = Modifier.fillMaxWidth()) {
+    NavigationBar(modifier = modifier.fillMaxWidth()) {
         Destinations.entries.forEach { destination ->
             NavigationBarItem(
                 selected = selectedDestination == destination,
@@ -41,5 +47,13 @@ fun NavBar() {
                 label = { Text(text = destination.title) }
             )
         }
+    }
+}
+
+@Preview(showBackground = true, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_YES)
+@Composable
+fun HomePreview() {
+    HabitHeroTheme {
+        HomeScreen(skills = TestDataProvider.getExampleSkills(), onAddButtonClick = { })
     }
 }
