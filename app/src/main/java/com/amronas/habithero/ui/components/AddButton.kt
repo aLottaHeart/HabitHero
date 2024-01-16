@@ -10,9 +10,9 @@ import androidx.compose.ui.res.stringResource
 import com.amronas.habithero.R
 
 @Composable
-fun AddButton(modifier: Modifier = Modifier) {
+fun AddButton(modifier: Modifier = Modifier, onClick: () -> Unit) {
     ExtendedFloatingActionButton(
-        onClick = { /*..*/ },
+        onClick = { onClick() },
         modifier = modifier,
     ) {
         Icon(
