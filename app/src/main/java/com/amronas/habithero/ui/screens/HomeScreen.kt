@@ -18,12 +18,11 @@ import com.amronas.habithero.ui.components.AddButton
 import com.amronas.habithero.ui.components.SkillList
 import com.amronas.habithero.ui.themes.darkTheme.DarkTheme
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(skills: List<Skill>, navController: NavController) {
     Surface {
         Scaffold(
-            topBar = { TopAppBar(title = { Text("Top app bar") }) },
+            topBar = { TopBar() },
             floatingActionButton = { AddButton(onClick = { navController.navigate("addSkillScreen") }) }
         ) { innerPadding ->
             Column(
@@ -33,6 +32,14 @@ fun HomeScreen(skills: List<Skill>, navController: NavController) {
             }
         }
     }
+}
+
+@Composable
+@OptIn(ExperimentalMaterial3Api::class)
+private fun TopBar() {
+    TopAppBar(
+        title = { Text("Your skills") },
+    )
 }
 
 @Preview(showBackground = true, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_YES)

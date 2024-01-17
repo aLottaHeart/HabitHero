@@ -3,7 +3,7 @@ package com.amronas.habithero.ui.components
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.FavoriteBorder
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.Text
@@ -31,7 +31,7 @@ fun SkillItem(skill: Skill) {
         trailingContent = { Text("+40", color = Color.Green) },
         leadingContent = {
             Icon(
-                Icons.Filled.FavoriteBorder,
+                Icons.Filled.Star,
                 contentDescription = "Localized description",
             )
         }
