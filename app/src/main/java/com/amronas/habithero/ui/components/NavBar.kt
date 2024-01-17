@@ -54,6 +54,6 @@ fun NavBar(
 @Composable
 fun HomePreview() {
     HabitHeroTheme {
-        HomeScreen(skills = TestDataProvider.getExampleSkills(), onAddButtonClick = { })
+        NavBar()
     }
 }

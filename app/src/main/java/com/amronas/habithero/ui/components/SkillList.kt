@@ -12,11 +12,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.amronas.habithero.data.Skill
 import com.amronas.habithero.data.TestDataProvider
-import com.amronas.habithero.ui.screens.HomeScreen
 import com.amronas.habithero.ui.themes.heroTheme.HabitHeroTheme
 
 @Composable
-fun SkillsList(skills: List<Skill>) {
+fun SkillList(skills: List<Skill>) {
     LazyColumn {
         items(skills) { skill ->
             SkillItem(skill)
@@ -43,6 +42,6 @@ fun SkillItem(skill: Skill) {
 @Composable
 fun ListPreview() {
     HabitHeroTheme {
-        HomeScreen(skills = TestDataProvider.getExampleSkills(), onAddButtonClick = { })
+        SkillList(skills = TestDataProvider.getExampleSkills())
     }
 }
